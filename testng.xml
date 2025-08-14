@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<listeners>
+	 	<listener class-name="listeners.ExtentReportListener" />
+	</listeners>
+
+    <test thread-count="5" name="Test">
+    
+        <parameter name="bookingId" value="1001"/>
+        <parameter name="trainClass" value="THIRDAC"/>
+        <parameter name="invalidId" value="909090"/>
+
+        <classes>
+        		<class name="testrunner.CucumberTestNGRunner"/>
+        		<class name="testcases.AuthAccessTest" />
+        		<class name="testcases.GetListTest"  />
+        		<class name="testcases.GetTrainTest"  />
+        		<class name="testcases.PostBookingTest" />
+            <class name="testcases.DeleteIdTest"/>
+            <class name="testcases.DelInvalidIdTest"/>
+            <class name="testcases.GetIdTest"/>
+            <class name="testcases.GetInvalidIdTest"/>
+            <class name="testcases.GetTrainTest"/>
+        </classes>
+        
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+
+	    {
+	        "bookingId": 4001,
+	        "bookingDate": "25/01/2025",
+	        "departCity": "Chennai",
+	        "arrivalCity": "Coimbatore",
+	        "passengerCount": 2,
+	        "trainName": "Travel Express",
+	        "passengerName": "Ruhi",
+	        "trainClass": "THIRDAC",
+	        "ticketType": "GENERAL"
+	    }//object -1
+		
+

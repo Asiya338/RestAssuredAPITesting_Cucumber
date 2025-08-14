@@ -1,0 +1,68 @@
+# ===============================
+# Java & Maven
+# ===============================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# ===============================
+# Eclipse / IntelliJ / IDEs
+# ===============================
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# ===============================
+# OS-specific
+# ===============================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ===============================
+# Logs
+# ===============================
+*.log
+logger/*.log
+src/test/resources/logger/*.log
+
+# ===============================
+# Reports
+# ===============================
+reports/
+extentReports.html
+extentReport.html
+test-output/
+surefire-reports/
+cucumber-reports/
+target/cucumber-reports/
+target/site/
+
+# ===============================
+# Temporary files
+# ===============================
+*.tmp
+*.swp
+*.swo
+~$*

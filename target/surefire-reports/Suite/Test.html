@@ -1,0 +1,292 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 12 21:15:31 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>14 seconds (14284 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.DelInvalidIdTest.deleteByInvalidId()'><b>deleteByInvalidId</b><br>Test class: testcases.DelInvalidIdTest<br>Test method: Delete booking data by invalid bookingId<br>Parameters: 909090</td>
+<td><div><pre>java.lang.AssertionError: Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@41f40dfa]
+	at testcases.DelInvalidIdTest.deleteByInvalidId(DelInvalidIdTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1127333424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1127333424'><pre>java.lang.AssertionError: Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@41f40dfa]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotSame(Assert.java:1409)
+	at org.testng.Assert.assertNull(Assert.java:1342)
+	at testcases.DelInvalidIdTest.deleteByInvalidId(DelInvalidIdTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testcases.DelInvalidIdTest@4466af20</td></tr>
+<tr>
+<td title='testcases.GetInvalidIdTest.getByInvalidId()'><b>getByInvalidId</b><br>Test class: testcases.GetInvalidIdTest<br>Test method: Get booking data by invalid bookingId<br>Parameters: 909090</td>
+<td><div><pre>java.lang.AssertionError: Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@6fcc0a1]
+	at testcases.GetInvalidIdTest.getByInvalidId(GetInvalidIdTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1188469924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1188469924'><pre>java.lang.AssertionError: Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@6fcc0a1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotSame(Assert.java:1409)
+	at org.testng.Assert.assertNull(Assert.java:1342)
+	at testcases.GetInvalidIdTest.getByInvalidId(GetInvalidIdTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testcases.GetInvalidIdTest@6b927fb</td></tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate view booking by invalid Id - get request", "Booking Functionality RestAssured API"</td>
+<td><div><pre>java.lang.AssertionError: Response is not JSON!!!
+Expected: a string containing &quot;application/json&quot;
+     but: was &quot;&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateResponse(ValidationUtils.java:15)
+	at stepdefinations.GetInvalidSteps.validate_the_get_by_invalidid_response(GetInvalidSteps.java:26)
+	at ✽.validate the get by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace449951543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace449951543'><pre>java.lang.AssertionError: Response is not JSON!!!
+Expected: a string containing &quot;application/json&quot;
+     but: was &quot;&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateResponse(ValidationUtils.java:15)
+	at stepdefinations.GetInvalidSteps.validate_the_get_by_invalidid_response(GetInvalidSteps.java:26)
+	at ✽.validate the get by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:30)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate delete booking by invalid Id - delete request", "Booking Functionality RestAssured API"</td>
+<td><div><pre>java.lang.AssertionError: StatusCode mismatch!!!
+Expected: &lt;404&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateStatusCode(ValidationUtils.java:21)
+	at stepdefinations.DelInvalidIdSteps.validate_the_del_by_invalidid_response(DelInvalidIdSteps.java:29)
+	at ✽.validate the del by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:40)
+</pre></div><a href='#' onClick='toggleBox("stack-trace718053924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace718053924'><pre>java.lang.AssertionError: StatusCode mismatch!!!
+Expected: &lt;404&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateStatusCode(ValidationUtils.java:21)
+	at stepdefinations.DelInvalidIdSteps.validate_the_del_by_invalidid_response(DelInvalidIdSteps.java:29)
+	at ✽.validate the del by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:40)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate auth code and access token", "Authorization Functionality RestAssured API"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+<tr>
+<td title='testcases.DeleteIdTest.getBooking()'><b>getBooking</b><br>Test class: testcases.DeleteIdTest<br>Test method: Get bookings data after deletion with valid booking id</td>
+<td></td>
+<td>0</td>
+<td>testcases.DeleteIdTest@4f6ee6e4</td></tr>
+<tr>
+<td title='testcases.GetIdTest.getById()'><b>getById</b><br>Test class: testcases.GetIdTest<br>Test method: Get booking data by bookingId<br>Parameters: 1001</td>
+<td></td>
+<td>0</td>
+<td>testcases.GetIdTest@a514af7</td></tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate view booking list - get request", "Booking Functionality RestAssured API"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate add booking from JSON - post request", "Booking Functionality RestAssured API"</td>
+<td></td>
+<td>6</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+<tr>
+<td title='testcases.GetListTest.getList()'><b>getList</b><br>Test class: testcases.GetListTest<br>Test method: Get the bookings data from train API</td>
+<td></td>
+<td>0</td>
+<td>testcases.GetListTest@4f18837a</td></tr>
+<tr>
+<td title='testcases.PostBookingTest.getBooking()'><b>getBooking</b><br>Test class: testcases.PostBookingTest<br>Test method: Get response after adding bookings data</td>
+<td></td>
+<td>0</td>
+<td>testcases.PostBookingTest@1fa268de</td></tr>
+<tr>
+<td title='testcases.AuthAccessTest.getAccessToken()'><b>getAccessToken</b><br>Test class: testcases.AuthAccessTest<br>Test method: To get access_token with valid credentials</td>
+<td></td>
+<td>0</td>
+<td>testcases.AuthAccessTest@6356695f</td></tr>
+<tr>
+<td title='testcases.GetTrainTest.getByTrainClass()'><b>getByTrainClass</b><br>Test class: testcases.GetTrainTest<br>Test method: Get booking data by trainClass<br>Parameters: THIRDAC</td>
+<td></td>
+<td>0</td>
+<td>testcases.GetTrainTest@359f7cdf</td></tr>
+<tr>
+<td title='testcases.DeleteIdTest.deleteById()'><b>deleteById</b><br>Test class: testcases.DeleteIdTest<br>Test method: Delete booking data by valid bookingId<br>Parameters: 1001</td>
+<td></td>
+<td>0</td>
+<td>testcases.DeleteIdTest@4f6ee6e4</td></tr>
+<tr>
+<td title='testcases.DelInvalidIdTest.getBooking()'><b>getBooking</b><br>Test class: testcases.DelInvalidIdTest<br>Test method: Get bookings data after deletion with invalid booking id</td>
+<td></td>
+<td>0</td>
+<td>testcases.DelInvalidIdTest@4466af20</td></tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate delete booking by valid Id - delete request", "Booking Functionality RestAssured API"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+<tr>
+<td title='testcases.PostBookingTest.postBooking()'><b>postBooking</b><br>Test class: testcases.PostBookingTest<br>Test method: Post booking data from BookingData.json</td>
+<td></td>
+<td>0</td>
+<td>testcases.PostBookingTest@1fa268de</td></tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate view booking by valid trainClass - get request", "Booking Functionality RestAssured API"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+<tr>
+<td title='testrunner.CucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner.CucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate view booking by valid Id - get request", "Booking Functionality RestAssured API"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.CucumberTestNGRunner@3bb9a3ff</td></tr>
+</table><p>
+</body>
+</html>

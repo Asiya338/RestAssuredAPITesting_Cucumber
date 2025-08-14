@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="16.306" tests="19" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\DELL\eclipse-workspace\RestAssuredTestingCucumber\target\test-classes;C:\Users\DELL\eclipse-workspace\RestAssuredTestingCucumber\target\classes;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\DELL\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\DELL\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\DELL\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-java\7.11.0\cucumber-java-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-core\7.11.0\cucumber-core-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin\7.11.0\cucumber-gherkin-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.0\cucumber-gherkin-messages-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\DELL\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-expressions\16.1.1\cucumber-expressions-16.1.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\datatable\7.11.0\datatable-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-plugin\7.11.0\cucumber-plugin-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\docstring\7.11.0\docstring-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-testng\7.11.0\cucumber-testng-7.11.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\DELL\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.14.0\extentreports-cucumber6-adapter-2.14.0.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\extent-pdf-report\2.7.0\extent-pdf-report-2.7.0.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.10.0\cucumber-pdf-report-2.10.0.jar;C:\Users\DELL\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\DELL\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\DELL\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\DELL\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\DELL\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\DELL\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\DELL\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.4.1\rest-assured-cucumber-pdf-report-1.4.1.jar;C:\Users\DELL\.m2\repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;C:\Users\DELL\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\DELL\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.1\htmlextentreporter-1.0.1.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire3282036849528511597\surefirebooter-20250812211529486_3.jar C:\Users\DELL\AppData\Local\Temp\surefire3282036849528511597 2025-08-12T21-15-29_188-jvmRun1 surefire-20250812211529486_1tmp surefire_0-20250812211529486_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\DELL\eclipse-workspace\RestAssuredTestingCucumber\target\test-classes;C:\Users\DELL\eclipse-workspace\RestAssuredTestingCucumber\target\classes;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\DELL\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\DELL\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\DELL\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-java\7.11.0\cucumber-java-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-core\7.11.0\cucumber-core-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin\7.11.0\cucumber-gherkin-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.0\cucumber-gherkin-messages-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\DELL\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-expressions\16.1.1\cucumber-expressions-16.1.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\datatable\7.11.0\datatable-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-plugin\7.11.0\cucumber-plugin-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\docstring\7.11.0\docstring-7.11.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\DELL\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\DELL\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\io\cucumber\cucumber-testng\7.11.0\cucumber-testng-7.11.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\DELL\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.14.0\extentreports-cucumber6-adapter-2.14.0.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\extent-pdf-report\2.7.0\extent-pdf-report-2.7.0.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.10.0\cucumber-pdf-report-2.10.0.jar;C:\Users\DELL\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\DELL\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\DELL\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\DELL\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\DELL\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\DELL\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\DELL\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.4.1\rest-assured-cucumber-pdf-report-1.4.1.jar;C:\Users\DELL\.m2\repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;C:\Users\DELL\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\DELL\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\DELL\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.1\htmlextentreporter-1.0.1.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DELL"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\DELL\eclipse-workspace\RestAssuredTestingCucumber"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire3282036849528511597\surefirebooter-20250812211529486_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="DELL"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.7+6"/>
+    <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="C:\Users\DELL\eclipse-workspace\RestAssuredTestingCucumber"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="usedefaultlisteners" value="true"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre\bin;C:/Users/DELL/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916/jre/bin/server;C:/Users/DELL/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916/jre/bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 9.1\bin;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\Java\jdk-23\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\msys64\ucrt64\bin;C:\Program Files\CMake\bin;C:\Program Files\Python310\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\eclipse\java-2025-06\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;To validate add booking from JSON - post request&quot;, &quot;Booking Functionality RestAssured API&quot;](1)" classname="testrunner.CucumberTestNGRunner" time="6.417">
+    <system-out><![CDATA[
+@BookingAPI
+Scenario: To validate add booking from JSON - post request # src/test/resources/feature/BookingAPI.feature:8
+Reading JSON data from BookingData.json
+Add booking data to train API
+auth_code : djYm-EzRkyWziDiANDJZwg
+access_token : dTcgDDiu9JsGPNLpJXNemoZZwKrTMqASnlD3WHzI6ss
+  Given enter post endpoint and post request               # stepdefinations.PostBookingSteps.enter_post_endpoint_and_post_request()
+  When validate the post response                          # stepdefinations.PostBookingSteps.validate_the_post_response()
+>>>Request and Response are logged in PostBooking.log
+  Then log the post results                                # stepdefinations.PostBookingSteps.log_the_post_results()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;To validate view booking list - get request&quot;, &quot;Booking Functionality RestAssured API&quot;](2)" classname="testrunner.CucumberTestNGRunner" time="0.468">
+    <system-out><![CDATA[
+@BookingAPI
+Scenario: To validate view booking list - get request # src/test/resources/feature/BookingAPI.feature:13
+Get bookings data
+  Given enter get endpoint and get request            # stepdefinations.GetListSteps.enter_get_endpoint_and_get_request()
+  When validate the get list response                 # stepdefinations.GetListSteps.validate_the_get_list_response()
+>>>Request and Response are logged in GetBooking.log
+  Then log the get list results                       # stepdefinations.GetListSteps.log_the_get_list_results()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To validate view booking by valid Id - get request&quot;, &quot;Booking Functionality RestAssured API&quot;](3)" classname="testrunner.CucumberTestNGRunner" time="0.362">
+    <system-out><![CDATA[
+@BookingAPI
+Scenario: To validate view booking by valid Id - get request  # src/test/resources/feature/BookingAPI.feature:18
+Get booking by bookingId
+  Given enter get endpoint with valid Id 1001 and get request # stepdefinations.GetIdSteps.enter_get_endpoint_with_valid_Id_and_get_request(int)
+  When validate the get by id response                        # stepdefinations.GetIdSteps.validate_the_get_by_id_response()
+>>>Request and Response are logged in GetBooking.log
+  Then log the get by id results                              # stepdefinations.GetIdSteps.log_the_get_by_id_results()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To validate view booking by valid trainClass - get request&quot;, &quot;Booking Functionality RestAssured API&quot;](4)" classname="testrunner.CucumberTestNGRunner" time="0.387">
+    <system-out><![CDATA[
+@BookingAPI
+Scenario: To validate view booking by valid trainClass - get request       # src/test/resources/feature/BookingAPI.feature:23
+Get booking by trainClass
+  Given enter get endpoint with valid trainclass 'THIRDAC' and get request # stepdefinations.GetTrainStep.enter_get_endpoint_with_valid_Id_and_get_request(java.lang.String)
+  When validate the get trainclass response                                # stepdefinations.GetTrainStep.validate_the_get_trainclass_response()
+>>>Request and Response are logged in GetBooking.log
+  Then log the get trainclass results                                      # stepdefinations.GetTrainStep.log_the_get_trainclass_results()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To validate view booking by invalid Id - get request&quot;, &quot;Booking Functionality RestAssured API&quot;](5)" classname="testrunner.CucumberTestNGRunner" time="0.316">
+    <failure message="Response is not JSON!!!&#10;Expected: a string containing &quot;application/json&quot;&#10;     but: was &quot;&quot;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Response is not JSON!!!
+Expected: a string containing "application/json"
+     but: was ""
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateResponse(ValidationUtils.java:15)
+	at stepdefinations.GetInvalidSteps.validate_the_get_by_invalidid_response(GetInvalidSteps.java:26)
+	at ✽.validate the get by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:30)
+]]></failure>
+    <system-out><![CDATA[
+@BookingAPI
+Scenario: To validate view booking by invalid Id - get request    # src/test/resources/feature/BookingAPI.feature:28
+Get booking by bookingId
+  Given enter get endpoint with invalid Id 100005 and get request # stepdefinations.GetInvalidSteps.enter_get_endpoint_with_invalid_Id_and_get_request(int)
+  When validate the get by invalidid response                     # stepdefinations.GetInvalidSteps.validate_the_get_by_invalidid_response()
+      java.lang.AssertionError: Response is not JSON!!!
+Expected: a string containing "application/json"
+     but: was ""
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateResponse(ValidationUtils.java:15)
+	at stepdefinations.GetInvalidSteps.validate_the_get_by_invalidid_response(GetInvalidSteps.java:26)
+	at ✽.validate the get by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:30)
+
+  Then log the get by invalidid results                           # stepdefinations.GetInvalidSteps.log_the_get_by_invalidid_results()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To validate delete booking by valid Id - delete request&quot;, &quot;Booking Functionality RestAssured API&quot;](6)" classname="testrunner.CucumberTestNGRunner" time="0.329">
+    <system-out><![CDATA[
+@BookingAPI
+Scenario: To validate delete booking by valid Id - delete request   # src/test/resources/feature/BookingAPI.feature:33
+Delete Booking by bookingId
+  Given enter delete endpoint with valid Id 1001 and delete request # stepdefinations.DeleteIdSteps.enter_delete_endpoint_with_valid_Id_and_delete_request(int)
+  When validate the del response by id                              # stepdefinations.DeleteIdSteps.validate_the_del_response_by_id()
+>>>Request and Response are logged in DelBooking.log
+  Then log the del by id results                                    # stepdefinations.DeleteIdSteps.log_the_del_by_id__results()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To validate delete booking by invalid Id - delete request&quot;, &quot;Booking Functionality RestAssured API&quot;](7)" classname="testrunner.CucumberTestNGRunner" time="0.385">
+    <failure message="StatusCode mismatch!!!&#10;Expected: &lt;404&gt;&#10;     but: was &lt;200&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+StatusCode mismatch!!!
+Expected: <404>
+     but: was <200>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateStatusCode(ValidationUtils.java:21)
+	at stepdefinations.DelInvalidIdSteps.validate_the_del_by_invalidid_response(DelInvalidIdSteps.java:29)
+	at ✽.validate the del by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:40)
+]]></failure>
+    <system-out><![CDATA[
+@BookingAPI
+Scenario: To validate delete booking by invalid Id - delete request      # src/test/resources/feature/BookingAPI.feature:38
+Delete Booking by bookingId
+  Given enter delete endpoint with invalid Id 1000078 and delete request # stepdefinations.DelInvalidIdSteps.enter_delete_endpoint_with_invalid_Id_and_delete_request(int)
+  When validate the del by invalidid response                            # stepdefinations.DelInvalidIdSteps.validate_the_del_by_invalidid_response()
+      java.lang.AssertionError: StatusCode mismatch!!!
+Expected: <404>
+     but: was <200>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at utils.ValidationUtils.validateStatusCode(ValidationUtils.java:21)
+	at stepdefinations.DelInvalidIdSteps.validate_the_del_by_invalidid_response(DelInvalidIdSteps.java:29)
+	at ✽.validate the del by invalidid response(file:///C:/Users/DELL/eclipse-workspace/RestAssuredTestingCucumber/src/test/resources/feature/BookingAPI.feature:40)
+
+  Then log the del by invalidid results                                  # stepdefinations.DelInvalidIdSteps.log_the_del_by_invalidid_results()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To validate auth code and access token&quot;, &quot;Authorization Functionality RestAssured API&quot;](8)" classname="testrunner.CucumberTestNGRunner" time="0.886">
+    <system-out><![CDATA[
+@Auth
+Scenario: To validate auth code and access token # src/test/resources/feature/authtoken.feature:9
+auth_code : v4AtYamg8d_-gwLtwZ-ECA
+access_token : iYBdoWvi5KVv2Lu4F-iA6pMTUJIfUzY39gSDfrMcYng
+  Given enter auth code to get access token      # stepdefinations.AuthAccessSteps.enter_auth_code_to_get_access_token()
+  When validate the auth response                # stepdefinations.AuthAccessSteps.validate_the_auth_response()
+>>>Request and Response are logged:
+  Then log the auth results                      # stepdefinations.AuthAccessSteps.log_the_auth_results()
+]]></system-out>
+  </testcase>
+  <testcase name="getAccessToken" classname="testcases.AuthAccessTest" time="0.01">
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+]]></system-err>
+  </testcase>
+  <testcase name="getList" classname="testcases.GetListTest" time="0.282">
+    <system-out><![CDATA[Get bookings data
+]]></system-out>
+  </testcase>
+  <testcase name="getByTrainClass[THIRDAC](1)" classname="testcases.GetTrainTest" time="0.271">
+    <system-out><![CDATA[Get booking by trainClass
+]]></system-out>
+  </testcase>
+  <testcase name="getBooking" classname="testcases.PostBookingTest" time="0.281">
+    <system-out><![CDATA[Get bookings data
+]]></system-out>
+  </testcase>
+  <testcase name="postBooking" classname="testcases.PostBookingTest" time="0.356">
+    <system-out><![CDATA[Reading JSON data from BookingData.json
+Add booking data to train API
+]]></system-out>
+  </testcase>
+  <testcase name="deleteById[1001](1)" classname="testcases.DeleteIdTest" time="0.234">
+    <system-out><![CDATA[Delete Booking by bookingId
+]]></system-out>
+  </testcase>
+  <testcase name="getBooking" classname="testcases.DeleteIdTest" time="0.278">
+    <system-out><![CDATA[Get bookings data
+]]></system-out>
+  </testcase>
+  <testcase name="deleteByInvalidId[909090](1)" classname="testcases.DelInvalidIdTest" time="0.263">
+    <failure message="Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@41f40dfa]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@41f40dfa]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotSame(Assert.java:1409)
+	at org.testng.Assert.assertNull(Assert.java:1342)
+	at testcases.DelInvalidIdTest.deleteByInvalidId(DelInvalidIdTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Delete Booking by bookingId
+]]></system-out>
+  </testcase>
+  <testcase name="getBooking" classname="testcases.DelInvalidIdTest" time="0.295">
+    <system-out><![CDATA[Get bookings data
+]]></system-out>
+  </testcase>
+  <testcase name="getById[1001](1)" classname="testcases.GetIdTest" time="0.29">
+    <system-out><![CDATA[Get booking by bookingId
+]]></system-out>
+  </testcase>
+  <testcase name="getByInvalidId[909090](1)" classname="testcases.GetInvalidIdTest" time="0.297">
+    <failure message="Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@6fcc0a1]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response must be null!!! expected [null] but found [io.restassured.internal.RestAssuredResponseImpl@6fcc0a1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotSame(Assert.java:1409)
+	at org.testng.Assert.assertNull(Assert.java:1342)
+	at testcases.GetInvalidIdTest.getByInvalidId(GetInvalidIdTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Get booking by bookingId
+]]></system-out>
+  </testcase>
+</testsuite>
